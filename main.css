@@ -43,7 +43,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    color: black;
     align-items: center;
     justify-content: space-around;
     margin: auto;
@@ -54,6 +53,8 @@
     padding-right: 45px;
     padding-left: 45px;
     font-size: 30px;
+    text-decoration: none;
+    color: black;
     }
   .emty{
     height: 20px;
@@ -168,3 +169,39 @@
     font-family: 'Manjari', sans-serif;
     font-size: 70px;
   }
+.bestseller{
+
+}
+.bestsellerH{
+  font-size: 70px;
+  text-align: center; 
+}
+.bsProduct{
+  display: flex;
+  background: #73877B; 
+  width: 600px;
+  height: 1000px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bsProduct_img{
+  height: 700px;
+}
+.bsProduct_des{
+  width: 500px;
+  justify-content: center;
+  font-family: 'Manjari', sans-serif;
+  padding: 40px;
+}
+.bsProduct_name{
+  font-size: 60px;
+  margin: 0px;
+  padding-bottom: 40px;
+  
+}
+.bsProduct_price{
+  font-size: 50px;
+  margin: 0px;
+  
+}
