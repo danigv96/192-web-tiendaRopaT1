@@ -1,0 +1,170 @@
+.top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 10px;
+    background: #51afb9;
+    align-items: center;
+    justify-content: space-between; 
+    width: 90%;
+    height: 100px; 
+    margin: auto;
+  }
+  .left{
+    font-size: 40px;
+  }
+  .centerBtn{
+      background: #51afb9;
+      border: 0px;
+      font-size: 30px;
+      font-family: 'Manjari', sans-serif;
+  }
+  .centerInput{
+      background: #51afb9;
+      border: 0px;
+  }
+  .rigth{
+    font-family: 'Manjari', sans-serif;
+    font-size: 30px;
+  }
+  .rigthItem{
+    padding-right: 50px;
+  }
+  .menu{
+    display: flex;
+    background: #e07b40;
+    height: 80px;
+    align-content: center;
+    width: 70%;
+    margin: auto;
+    flex-wrap: wrap;
+     }
+  .menuList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+    padding: 30px;
+     }
+  .menuItems{
+    font-family: 'Manjari', sans-serif;
+    padding-right: 45px;
+    padding-left: 45px;
+    font-size: 30px;
+    }
+  .emty{
+    height: 20px;
+  }
+  .bannerImg{
+    display: flex;
+    width: 90%;
+    height: 800px;
+    margin: auto;
+    justify-content: center;
+    background-image: url(/img/bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.bannerP{
+    font-size: 170px;
+    color: white;
+    background: rgb(216, 120, 120);
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    
+}
+  .emty1{
+    height: 80px;
+  }
+  .new{
+      display: flex;
+      width: 1800px;
+      margin: auto;
+    }
+  .newDes{
+      display: flex;
+      flex-direction: column;
+      width: 900px;
+    }
+  .newDes_h1{
+      font-size: 80px;
+      text-align: end;
+      padding-right: 60px;
+     }
+  .newStyle{
+    display: flex;
+    height: 50px;
+    width: 600px;
+    background: #E5A43C;
+    align-content: flex-end;
+  }
+  .newStyle_1{
+    height: 10px;
+    width: 300px;
+    background: black;
+  }
+  .newStyle_2{
+    height: 300px;
+    width: 4px;
+    background: #2F2F2F;
+  }
+  .newDes_p{
+    font-family: 'Manjari', sans-serif;
+    font-size: 30px;
+    text-align: end;
+    padding-right: 60px;
+  }
+  .newBtn{
+    width: 300px;
+    height: 80px;
+    font-size: 30px;
+    background: #2F2F2F;
+    color: white;
+    border: none;
+    font-family: 'Manjari', sans-serif;
+
+  }
+  .newImg{
+      height: 1000px;
+  }
+  .promoSale{
+    display: flex;
+    width: 90%;
+    height: 400px;
+    background: #F84F36;
+    margin: auto;
+    flex-direction: row;
+    align-items: center;
+  }
+  .saleLeft{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 40px;
+
+  }
+  .saleP1{
+    font-family: 'Manjari', sans-serif;
+    font-size: 50px;
+  }
+  .saleP2{
+    font-size: 190px;
+  }
+  .saleRigth{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .saleP3{
+    font-family: 'Manjari', sans-serif;
+    font-size: 70px;
+  }
