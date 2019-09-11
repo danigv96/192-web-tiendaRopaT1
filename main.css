@@ -29,6 +29,10 @@
   }
   .rigthItem{
     padding-right: 50px;
+    transition: .1s ease-in-out;
+  }
+  .rigthItem:hover{
+    color: rgb(180, 180, 180);
   }
   .menu{
     display: flex;
@@ -55,7 +59,11 @@
     font-size: 30px;
     text-decoration: none;
     color: black;
+    transition: .1s ease-in-out;
     }
+  .menuItems:hover{
+    color: rgb(180, 180, 180);
+  }
   .emty{
     height: 20px;
   }
@@ -128,7 +136,10 @@
     color: white;
     border: none;
     font-family: 'Manjari', sans-serif;
-
+    transition: .1s ease-in-out;
+  }
+  .newBtn:hover{
+    background: rgb(70, 69, 69);
   }
   .newImg{
       height: 1000px;
@@ -313,5 +324,32 @@
   font-family: 'Manjari', sans-serif;
 }
 .galleryTitle{
-  
+
+}
+footer{
+  background: rgb(233, 233, 233);
+}
+.footerGroup{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+
+}
+
+.footerList{
+  display: flex;
+  flex-direction: column;
+}
+.listH{
+  font-family: 'Manjari', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.listI{
+  font-family: 'Manjari', sans-serif;
+  font-size: 17px;
+  padding: 5px;
 }
