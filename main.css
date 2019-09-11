@@ -93,7 +93,7 @@
       width: 900px;
     }
   .newDes_h1{
-      font-size: 80px;
+      font-size: 100px;
       text-align: end;
       padding-right: 60px;
      }
@@ -135,8 +135,8 @@
   }
   .promoSale{
     display: flex;
-    width: 90%;
-    height: 400px;
+    width: 60%;
+    height: 200px;
     background: #F84F36;
     margin: auto;
     flex-direction: row;
@@ -145,18 +145,17 @@
   .saleLeft{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 48%;
     justify-content: space-around;
     align-items: center;
     padding-left: 40px;
-
   }
   .saleP1{
     font-family: 'Manjari', sans-serif;
-    font-size: 50px;
+    font-size: 30px;
   }
   .saleP2{
-    font-size: 190px;
+    font-size: 85px;
   }
   .saleRigth{
     display: flex;
@@ -167,41 +166,152 @@
   }
   .saleP3{
     font-family: 'Manjari', sans-serif;
-    font-size: 70px;
+    font-size: 30px;
   }
 .bestseller{
-
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
 }
 .bestsellerH{
-  font-size: 70px;
+  font-size: 50px;
   text-align: center; 
+  margin-bottom: 0px;
+}
+.bsStyle{
+  display: flex;
+  justify-items: center;
+  width: 80%;
+  height: 80px;
+  background: #51afb9;
+  margin-top: 1px;
+}
+.bsStyle1{
+  display: flex;
+  justify-items: center;
+  width: 80%;
+  height: 10px;
+  background: black;
+}
+.bestsellerProduct{
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  margin: auto;
 }
 .bsProduct{
   display: flex;
   background: #73877B; 
-  width: 600px;
-  height: 1000px;
+  width: 400px;
+  height: 560px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 10px;
 }
 .bsProduct_img{
-  height: 700px;
+  height: 380px;
 }
 .bsProduct_des{
-  width: 500px;
   justify-content: center;
   font-family: 'Manjari', sans-serif;
   padding: 40px;
 }
 .bsProduct_name{
-  font-size: 60px;
+  font-size: 30px;
   margin: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   
 }
 .bsProduct_price{
-  font-size: 50px;
+  font-size: 30px;
   margin: 0px;
+}
+.newsletter{
+
+}
+.newsletterH{
+  font-size: 50px;
+  text-align: center; 
+  margin-bottom: 0px;
+}
+.nlStyle{
+  display: flex;
+  width: 80%;
+  height: 80px;
+  background: #E5A43C;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+}
+.nlStyle1{
+  display: flex;
+  width: 1200px;
+  height: 8px;
+  background: black;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+}
+.nlP{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  
+}
+.nlP1{
+  font-family: 'Manjari', sans-serif;
+  font-size: 30px;
+  width: 700px;
+  justify-items: center;
+  text-align: center;
+}
+.nlInput{
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  width: 70%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.nlInput1{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin: auto;
+  padding: 30px;
+}
+.nlInputName{
+  font-family: 'Manjari', sans-serif;
+  font-size: 30px;
+}
+.nlInputI{
+  width: 600px;
+  height: 40px;
+  font-family: 'Manjari', sans-serif;
+  font-size: 30px;
+}
+.nlBtn{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.nlBtn1{
+  width: 900px;
+  height: 80px;
+  font-size: 30px;
+  background: #2F2F2F;
+  color: white;
+  border: none;
+  font-family: 'Manjari', sans-serif;
+}
+.galleryTitle{
   
 }
