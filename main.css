@@ -241,6 +241,62 @@
   font-size: 30px;
   margin: 0px;
 }
+.interaction{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+}
+.interImg{
+  height: 1000px;
+}
+.interactionH{
+  font-size: 50px;
+}
+.interactionColor{
+  display: flex;
+  flex-direction: row;
+}
+.iColor1{
+  width: 80px;
+  height: 80px;
+  background: #51afb9;
+  margin: 10px;
+  border-radius: 80px;
+}
+.iColor2{
+  width: 80px;
+  height: 80px;
+  background: #0a2f33;
+  margin: 10px;
+  border-radius: 80px;
+}
+.iColor3{
+  width: 80px;
+  height: 80px;
+  background: #b98c51;
+  margin: 10px;
+  border-radius: 80px;
+}
+.iColor4{
+  width: 80px;
+  height: 80px;
+  background: #51afb9;
+  margin: 10px;
+  border-radius: 80px;
+}
+.interactionDescription{
+  margin: 30px;
+  font-family: 'Manjari', sans-serif;
+}
+.desItem1{
+  font-size: 30px;
+}
+.desItem2{
+  font-size: 25px;
+}
+
+
 .newsletter{
 
 }
