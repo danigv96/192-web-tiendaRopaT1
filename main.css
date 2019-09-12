@@ -76,16 +76,22 @@
     background-image: url(/img/bg.jpg);
     background-position: center;
     background-size: cover;
+    flex-direction: row;
+}
+.banner{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  align-items: center;
+  margin-top: 100px;
+ 
 }
 .bannerP{
-    font-size: 170px;
+    font-size: 130px;
     color: white;
     background: rgb(216, 120, 120);
     text-align: justify;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 30px;
-    
+
 }
   .emty1{
     height: 80px;
