@@ -17,6 +17,7 @@ button.slick-prev:before, .slick-prev:before {
   width:500px;
   display:block;
   margin:0 auto;
+  margin-top: 50px;
 }
 h3 {
     background: #fff;

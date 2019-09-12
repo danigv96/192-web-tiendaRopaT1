@@ -247,6 +247,7 @@
   width: 70%;
   margin: auto;
 }
+
 .interImg{
   height: 1000px;
 }
@@ -260,28 +261,28 @@
 .iColor1{
   width: 80px;
   height: 80px;
-  background: #51afb9;
+  background: #a0c2c1;
   margin: 10px;
   border-radius: 80px;
 }
 .iColor2{
   width: 80px;
   height: 80px;
-  background: #0a2f33;
+  background: #3c2a43;
   margin: 10px;
   border-radius: 80px;
 }
 .iColor3{
   width: 80px;
   height: 80px;
-  background: #b98c51;
+  background: #9b490f;
   margin: 10px;
   border-radius: 80px;
 }
 .iColor4{
   width: 80px;
   height: 80px;
-  background: #51afb9;
+  background: #2a4c4d;
   margin: 10px;
   border-radius: 80px;
 }
@@ -294,11 +295,6 @@
 }
 .desItem2{
   font-size: 25px;
-}
-
-
-.newsletter{
-
 }
 .newsletterH{
   font-size: 50px;
