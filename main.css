@@ -73,7 +73,7 @@
     height: 800px;
     margin: auto;
     justify-content: center;
-    background-image: url(/img/bg.jpg);
+    background-image: url(./img/bg.jpg);
     background-position: center;
     background-size: cover;
     flex-direction: row;
