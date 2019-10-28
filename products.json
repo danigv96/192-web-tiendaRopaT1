@@ -1,0 +1,64 @@
+{
+"products":[
+    {
+        "name":"Bright Perspex Heels",
+        "price": 30000,
+        "colour": "blue"
+    },
+    {
+        "name":"Can't Snake Leather Platform Heels",
+        "price": 30000,
+        "colour": "beige"
+    },
+    {
+        "name":"Croc Groovy Faux Leather Heels",
+        "price": 30000,
+        "colour": "green"
+    },
+    {
+        "name":"Chelsea Boots",
+        "price": 30000,
+        "colour": "green"
+    },
+    {
+        "name":"Faux Suede Heels",
+        "price": 30000,
+        "colour": "beige"
+    },
+    {
+        "name":"Gold Heels",
+        "price": 30000,
+        "colour": "gold"
+    },
+    {
+        "name":"Leather Embellished Boots",
+        "price": 30000,
+        "colour": "gold"
+    },
+    {
+        "name":"Leopard mixed fabric chunky Trainers",
+        "price": 30000,
+        "colour": "beige"
+    },
+    {
+        "name":"Platform 2 Part Heels",
+        "price": 30000,
+        "colour": "gold"
+    },
+    {
+        "name":"Snake Faux Leather Loafers",
+        "price": 30000,
+        "colour": "beige"
+    },
+    {
+        "name":"Sneaking Croc Sneakers",
+        "price": 30000,
+        "colour": "white"
+    },
+    {
+        "name":"Western Boots",
+        "price": 30000,
+        "colour": "beige"
+    }
+]
+}
