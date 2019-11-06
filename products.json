@@ -1,64 +1,197 @@
 {
 "products":[
     {
-        "name":"Bright Perspex Heels",
-        "price": 30000,
-        "colour": "blue"
+        "name":"Addict",
+        "price":80,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Botas/Addict/1.jpg","imgShoes/Botas/Addict/2.jpg","imgShoes/Botas/Addict/3.jpg"],
+        "category":"boots",
+        "colour":"black"
     },
     {
-        "name":"Can't Snake Leather Platform Heels",
-        "price": 30000,
-        "colour": "beige"
+        "name":"Adrenalina",
+        "price":70,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Botas/Adrenalina/1.jpg","imgShoes/Botas/Adrenalina/2.jpg","imgShoes/Botas/Adrenalina/3.jpg"],
+        "category":"boots",
+        "colour":"grey"
     },
     {
-        "name":"Croc Groovy Faux Leather Heels",
-        "price": 30000,
-        "colour": "green"
+        "name":"Bosi",
+        "price":60,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Botas/Bosi/1.jpg","imgShoes/Botas/Bosi/2.jpg","imgShoes/Botas/Bosi/3.jpg"],
+        "category":"boots",
+        "colour":"grey"
     },
     {
-        "name":"Chelsea Boots",
-        "price": 30000,
-        "colour": "green"
+        "name":"Boterine",
+        "price":50,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Botas/boterine/1.jpg","imgShoes/Botas/boterine/2.jpg","imgShoes/Botas/boterine/3.jpg"],
+        "category":"boots",
+        "colour":"white"
     },
     {
-        "name":"Faux Suede Heels",
-        "price": 30000,
-        "colour": "beige"
+        "name":"Polos",
+        "price":40,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Botas/Polos/1.jpg","imgShoes/Botas/Polos/2.jpg","imgShoes/Botas/Polos/3.jpg"],
+        "category":"boots",
+        "colour":"black"
     },
     {
-        "name":"Gold Heels",
-        "price": 30000,
-        "colour": "gold"
+        "name":"Stefi",
+        "price":30,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Botas/Stefi/1.jpg","imgShoes/Botas/Stefi/2.jpg","imgShoes/Botas/Stefi/3.jpg"],
+        "category":"boots",
+        "colour":"white"
+    },
+
+
+
+
+
+
+    {
+        "name":"Bata",
+        "price":80,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tacones/Bata/1.jpg","imgShoes/Tacones/Bata/2.jpg","imgShoes/Tacones/Bata/3.jpg"],
+        "category":"heels",
+        "colour":"black"
     },
     {
-        "name":"Leather Embellished Boots",
-        "price": 30000,
-        "colour": "gold"
+        "name":"Bati",
+        "price":70,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tacones/Bati/1.jpg","imgShoes/Tacones/Bati/2.jpg","imgShoes/Tacones/Bati/3.jpg"],
+        "category":"heels",
+        "colour":"white"
     },
     {
-        "name":"Leopard mixed fabric chunky Trainers",
-        "price": 30000,
-        "colour": "beige"
+        "name":"Marte",
+        "price":60,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tacones/Marte/1.jpg","imgShoes/Tacones/Marte/2.jpg","imgShoes/Tacones/Marte/3.jpg"],
+        "category":"heels",
+        "colour":"grey"
     },
     {
-        "name":"Platform 2 Part Heels",
-        "price": 30000,
-        "colour": "gold"
+        "name":"Qupid",
+        "price":50,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tacones/Qupid/1.jpg","imgShoes/Tacones/Qupid/2.jpg","imgShoes/Tacones/Qupid/3.jpg"],
+        "category":"heels",
+        "colour":"grey"
     },
     {
-        "name":"Snake Faux Leather Loafers",
-        "price": 30000,
-        "colour": "beige"
+        "name":"Vizzano",
+        "price":40,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tacones/Vizzano/1.jpg","imgShoes/Tacones/Vizzano/2.jpg","imgShoes/Tacones/Vizzano/3.jpg"],
+        "category":"heels",
+        "colour":"black"
     },
     {
-        "name":"Sneaking Croc Sneakers",
-        "price": 30000,
-        "colour": "white"
+        "name":"Zatz",
+        "price":30,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tacones/Zatz/1.jpg","imgShoes/Tacones/Zatz/2.jpg","imgShoes/Tacones/Zatz/3.jpg"],
+        "category":"heels",
+        "colour":"white"
+    },
+
+
+
+
+
+
+    {
+        "name":"Asics",
+        "price":80,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Asics/1.jpg","imgShoes/Tenis/Asics/2.jpg","imgShoes/Tenis/Asics/3.jpg"],
+        "category":"tennis",
+        "colour":"white"
     },
     {
-        "name":"Western Boots",
-        "price": 30000,
-        "colour": "beige"
+        "name":"County",
+        "price":70,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/County/1.jpg","imgShoes/Tenis/County/2.jpg","imgShoes/Tenis/County/3.jpg"],
+        "category":"tennis",
+        "colour":"grey"
+    },
+    {
+        "name":"Hilfiger",
+        "price":60,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Hilfiger/1.jpg","imgShoes/Tenis/Hilfiger/2.jpg","imgShoes/Tenis/Hilfiger/3.jpg"],
+        "category":"tennis",
+        "colour":"grey"
+    },
+    {
+        "name":"Lifestyle",
+        "price":50,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Lifestyle/1.jpg","imgShoes/Tenis/Lifestyle/2.jpg","imgShoes/Tenis/Lifestyle/3.jpg"],
+        "category":"tennis",
+        "colour":"grey"
+    },
+    {
+        "name":"Linzer",
+        "price":40,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Linzer/1.jpg","imgShoes/Tenis/Linzer/2.jpg","imgShoes/Tenis/Linzer/3.jpg"],
+        "category":"tennis",
+        "colour":"white"
+    },
+    {
+        "name":"Royal",
+        "price":30,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Royal/1.jpg","imgShoes/Tenis/Royal/2.jpg","imgShoes/Tenis/Royal/3.jpg"],
+        "category":"tennis",
+        "colour":"white"
+    },
+    {
+        "name":"Via",
+        "price":20,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Via/1.jpg","imgShoes/Tenis/Via/2.jpg","imgShoes/Tenis/Via/3.jpg"],
+        "category":"tennis",
+        "colour":"black"
+    },
+    {
+        "name":"Moleca",
+        "price":10,
+        "description":"A coat to keep the cold while remaining cool. Ideal to look relaxed and always young",
+        "size": ["6","7","8"],
+        "imagen":["imgShoes/Tenis/Moleca/1.jpg","imgShoes/Tenis/Moleca/2.jpg","imgShoes/Tenis/Moleca/3.jpg"],
+        "category":"tennis",
+        "colour":"black"
     }
+
 ]
 }
