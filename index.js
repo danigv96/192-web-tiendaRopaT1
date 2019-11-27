@@ -114,7 +114,22 @@ app.get('/informacion', function (request, response) {
 });
 
 app.get('/congrats', function (request, response) {
-    response.render('congrats');
+    const coleccion = db.collection('Carrito');
+    coleccion.find({}).toArray(function (err, docs) {
+        if (err) {
+            console.log(err);
+            response.send(err);
+            return;
+        }
+        var total = 0;
+        docs.map((elem) => {
+            total += elem.price;
+        });
+        response.render('congrats', {
+            productos: docs,
+            total: total
+        });
+    });
 });
 
 app.post('/api/AgregarAlCarrito', function (request, response) {

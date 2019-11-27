@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DTV</title>
+    <link rel="stylesheet" href="./estilos/styleShoes.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./estilos/checkout.css">
+</head>
+
+<body>
+     {{> header}}
+
+    <div class="shoes_title">
+        <div class="titleStyle">
+            <div class="titleStyle1"></div>
+        </div>
+    </div>
+
+    <h1>Congratulations</h1>
+    <h5>you bought</h5>
+
+    <div class="bag">
+        {{#each productos}}
+        <div class="prod">
+            <img src="./{{imagen.[0]}}" alt="">
+
+            <div class="des">
+                <h2>{{name}}</h2>
+            </div>
+
+            <div class="cant">
+                <p>Num Products</p>
+                <input type="number" value="1">
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <a class="btnCheck" href="/Store">Go back to the store</a>
+
+{{> footer}}
+</body>
+
+</html>
