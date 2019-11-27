@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,58 +10,107 @@
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
 </head>
+
 <body>
-        <header>
-            <div class="top">
-                <div class="left">
-                    <h1>VTG</h1>
-                </div>
-                <div class="center">
-                    <button class="centerBtn"> <strong>Search</strong> </button>
-                    <input class="centerInput" type="text">
-                </div>
-                <div class="rigth">
-                    <a class="rigthItem">Login</a>
-                    <a class="rigthItem">Sing</a>
-                </div>
+    <header>
+        <div class="top">
+            <div class="left">
+                <h1>VTG</h1>
             </div>
-            <nav class="menu">
-                <ul class="menuList">
-                    <a class="menuItems" href="">Sale</a>
-                    <a class="menuItems" href="">New</a>
-                    <a class="menuItems" href="">Clothes</a>
-                    <a class="menuItems" href="/shoes">Shoes</a>
-                    <a class="menuItems" href="">Accessories</a>
-                </ul>
-            </nav>
-    
-            <div class="emty"></div>
-    <div></div>
+            <div class="center">
+                <button class="centerBtn"> <strong>Search</strong> </button>
+                <input class="centerInput" type="text">
+            </div>
+            <div class="rigth">
+                <a class="rigthItem">Login</a>
+                <a class="rigthItem">Sing</a>
+            </div>
+        </div>
+        <nav class="menu">
+            <ul class="menuList">
+                <a class="menuItems" href="">Sale</a>
+                <a class="menuItems" href="">New</a>
+                <a class="menuItems" href="">Clothes</a>
+                <article>
+                    <div class="pCont">
+                        <a class="menuItems" href="">Shoes</a>
+                    </div>
+                    <ul>
+                        <li><a href="/store?var=general&val=general">All Shoes</a></li>
+                        <li><a href="/store?var=category&val=Boots">Boots</a></li>
+                        <li><a href="/store?var=category&val=Sneakers">Sneakers</a></li>
+                        <li><a href="/store?var=category&val=Heels">Heels</a></li>
+                    </ul>
+                </article>
+                <a class="menuItems" href="">Accessories</a>
+            </ul>
+        </nav>
+
+        <div class="emty"></div>
+        <div></div>
     </header>
+
     <div class="shoes_title">
         <h1 class="title">Shoes</h1>
         <div class="titleStyle">
-                <div class="titleStyle1"></div>
+            <div class="titleStyle1"></div>
         </div>
     </div>
     <nav class="filters">
-        <ul class="filterList">
-            <a class="listItems" href="">Style</a>
-            <a class="listItems" href="">Size</a>
-            <a class="listItems" href="">Colour</a>
-            <a class="listItems" href="">Sort by</a>
-        </ul>
+        <article>
+            <div class="pCont">
+                <p>Style</a>
+            </div>
+            <ul>
+                <li><a href="/store?var=general&val=general">All Shoes</a></li>
+                <li><a href="/store?var=category&val=boots">Boots</a></li>
+                <li><a href="/store?var=category&val=tennis">Sneakers</a></li>
+                <li><a href="/store?var=category&val=heels">Heels</a></li>
+            </ul>
+        </article>
+        <article>
+            <div class="pCont">
+                <p>Size</a>
+            </div>
+            <ul>
+                <li><a href="/store?var=size&val=6">6</a></li>
+                <li><a href="/store?var=size&val=7">7</a></li>
+                <li><a href="/store?var=size&val=8">8</a></li>
+            </ul>
+        </article>
+        <article>
+            <div class="pCont">
+                <p>Colour</a>
+            </div>
+            <ul>
+                <li><a href="/store?var=colour&val=black">black</a></li>
+                <li><a href="/store?var=colour&val=grey">grey</a></li>
+                <li><a href="/store?var=colour&val=white">white</a></li>
+            </ul>
+        </article>
+        <article>
+            <div class="pCont">
+                <p>Sort by</a>
+            </div>
+            <ul>
+                <li><a href="/store?var=ordenar&val=des">price (Hight to Low)</a></li>
+                <li><a href="/store?var=ordenar&val=asc">price (Low to Hight)</a></li>
+            </ul>
+        </article>
     </nav>
     <div class="products" id="products">
+        {{#each productos}}
         <div class="product">
             <div>
-                <img class="product_img" src="./imgShoes/Botas/Addict/1.jpg" alt="">
+                <img class="product_img" src="./{{imagen.[0]}}" alt="">
             </div>
             <div class="productDescription">
-                <p class="productDescription_name">Addict</p>
-                <p class="productDescription_price"> <strong>$80.00</strong></p>
+                <p class="productDescription_name">{{name}}</p>
+                <p class="productDescription_price"><strong>$ {{price}}</strong></p>
             </div>
         </div>
-    </div>    
+        {{/each}}
+    </div>
 </body>
+
 </html>

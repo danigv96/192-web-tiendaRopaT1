@@ -1,0 +1,9 @@
+.top{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    padding: 20px;
+    background:#3f3f3f;
+    align-items: center;
+    justify-content: space-between;  
+  }
