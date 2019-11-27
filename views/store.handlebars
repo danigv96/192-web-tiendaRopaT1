@@ -7,48 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./estilos/styleShoes.css">
+    <link rel="stylesheet" href="./estilos/main.css">
     <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="top">
-            <div class="left">
-                <h1>VTG</h1>
-            </div>
-            <div class="center">
-                <button class="centerBtn"> <strong>Search</strong> </button>
-                <input class="centerInput" type="text">
-            </div>
-            <div class="rigth">
-                <a class="rigthItem">Login</a>
-                <a class="rigthItem">Sing</a>
-            </div>
-        </div>
-        <nav class="menu">
-            <ul class="menuList">
-                <a class="menuItems" href="">Sale</a>
-                <a class="menuItems" href="">New</a>
-                <a class="menuItems" href="">Clothes</a>
-                <article>
-                    <div class="pCont">
-                        <a class="menuItems" href="">Shoes</a>
-                    </div>
-                    <ul>
-                        <li><a href="/store?var=general&val=general">All Shoes</a></li>
-                        <li><a href="/store?var=category&val=Boots">Boots</a></li>
-                        <li><a href="/store?var=category&val=Sneakers">Sneakers</a></li>
-                        <li><a href="/store?var=category&val=Heels">Heels</a></li>
-                    </ul>
-                </article>
-                <a class="menuItems" href="">Accessories</a>
-            </ul>
-        </nav>
-
-        <div class="emty"></div>
-        <div></div>
-    </header>
+    {{> header}}
 
     <div class="shoes_title">
         <h1 class="title">Shoes</h1>
@@ -101,6 +66,7 @@
     <div class="products" id="products">
         {{#each productos}}
         <div class="product">
+            <a href='/detalle?producto={{name}}'>bag</a>
             <div>
                 <img class="product_img" src="./{{imagen.[0]}}" alt="">
             </div>
@@ -111,6 +77,8 @@
         </div>
         {{/each}}
     </div>
+
+    {{> footer}}
 </body>
 
 </html>

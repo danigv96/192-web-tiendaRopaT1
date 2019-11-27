@@ -1,0 +1,26 @@
+.producto {
+    display: flex;
+    flex-direction: row;
+
+    .imagenes {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+
+        .imgsVerticales {
+            width: 20%;
+        }
+
+        .imgContGen {
+            width: 80%;
+        }
+    }
+
+    .descripcion {
+        width: 40%;
+    }
+}
+
+img {
+    width: 100%;
+}

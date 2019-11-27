@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VTG</title><link rel="stylesheet" href="./estilos/styleShoes.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./estilos/detalle.css">
+    <link href="https://fonts.googleapis.com/css?family=Gravitas+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    {{> header}}
+    <div class="shoes_title">
+        <h1 class=""><a href="/store">BACK</a></h1>
+        <div class="titleStyle">
+            <div class="titleStyle1"></div>
+        </div>
+    </div>
+
+    {{#each producto}}
+    <section class="producto">
+        <article class="imagenes">
+            <div class="imgsVerticales">
+                <div class="imgCont">
+                    <img id="imgUno" src="./{{imagen.[0]}}" alt="{{nombre}}">
+                </div>
+                <div class="imgCont">
+                    <img id="imgDos" src="./{{imagen.[1]}}" alt="{{nombre}}">
+                </div>
+                <div class="imgCont">
+                    <img id="imgTres"  src="./{{imagen.[2]}}" alt="{{nombre}}">
+                </div>
+            </div>
+            <div class="imgContGen">
+                <img id="img4" src="./{{imagen.[0]}}" alt="{{nombre}}">
+            </div>
+        </article>
+
+        <article class="descripcion">
+            <h2>{{name}}</h2>
+
+            <p>Colour</p>
+            <p>{{colour}}</p>
+
+            <p>Size</p>
+            <p>{{size}}</p>
+
+            <p>Price</p>
+            <h3>$ {{price}}</h3>
+
+            <p>{{description}}</p>
+
+            <button class="btnAgregar" data-name="{{name}}">Add to bag</button>
+        </article>
+    </section>
+    {{/each}}
+
+    {{> footer}}
+</body>
+<script>
+    var img1 = document.querySelector('#imgUno');
+    var img2 = document.querySelector('#imgDos');
+    var img3 = document.querySelector('#imgTres');
+    var img4 = document.querySelector('#img4');
+
+    img1.addEventListener('click', ()=> {
+        img4.src = img1.src;
+    });
+    img2.addEventListener('click', ()=> {
+        img4.src = img2.src;
+    });
+    img3.addEventListener('click', ()=> {
+        img4.src = img3.src;
+    });
+
+    document.querySelector(".btnAgregar").addEventListener('click', function () {
+        var name = document.querySelector(".btnAgregar").getAttribute('data-name');
+
+        fetch(`/api/AgregarAlCarrito`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: `nombre=${name}`,
+        }).then(function (respuesta) {
+            return respuesta.text();
+        }).catch(function (error) {
+            console.error(error);
+        }).then(function (mensaje) {
+            console.log(mensaje);
+        });
+
+        window.location.href = "/checkout";
+    }
+    );
+</script>
+
+</html>

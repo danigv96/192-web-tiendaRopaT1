@@ -54,7 +54,7 @@ app.get('/store', function (request, response) {
             response.send(err);
             return;
         }
-        if (va === 'ordenar'){
+        if (va === 'ordenar'){ 
             if(request.query.val === 'des')docs.sort((a, b) => {return (b.price - a.price)});
             if(request.query.val === 'asc')docs.sort((a, b) => {return (a.price - b.price)});
         }
@@ -70,7 +70,7 @@ app.get('/detalle', function (request, response) {
     var prod = request.query.producto;
 
     coleccion.find({
-        nombre: {
+        name: {
             '$eq': prod
         }
     }).toArray(function (err, docs) {
@@ -81,7 +81,7 @@ app.get('/detalle', function (request, response) {
         }
         response.render('detalle', {
             producto: docs,
-            nombre: docs[0].nombre
+            nombre: docs[0].name
         });
     });
 });
@@ -161,7 +161,72 @@ app.post('/api/nuevaSolicitud', function (request, response) {
     response.send("Nueva solicitud creada");
 });
 
-Handlebars.registerPartial('nav', `<div class="navBar"><div class="logo"><img class="styleImgLogo" src="./image/imagenes/Logo.png" alt="logo Emilia"></div><div class="navText"><ul class="listText"><li class="barItems"><a class="navBarItems" href="/store?var=general&val=general">Productos</a><ul><li><a href="/store?var=general&val=general">Aretes</a></li><li><a href="">Pulseras</a></li><li><a href="">Collares</a></li><li><a href="">Tobilleras</a></li></ul></li><li class="barItems"><a class="navBarItems" href="#">Tienda</a></li><li class="barItems"><a class="navBarItems" href="#">Contactános</a></li></ul></div><div class="navImg"><ul class="listImg"><li class="barImg"><img class="styleImgMenu" src="./image/imagenes/search.svg" alt=""></li><li class="barImg"><img class="styleImgMenu" src="./image/imagenes/user.svg" alt=""></li><li class="barImg"><img class="styleImgMenu" src="./image/imagenes/shopping-bag.svg" alt=""></li></ul></div></div>`);
+Handlebars.registerPartial('header', `<header>
+<div class="top">
+    <div class="left">
+        <h1>VTG</h1>
+    </div>
+    <div class="center">
+        <button class="centerBtn"> <strong>Search</strong> </button>
+        <input class="centerInput" type="text">
+    </div>
+    <div class="rigth">
+        <a class="rigthItem">Login</a>
+        <a class="rigthItem">Sing</a>
+    </div>
+</div>
+<nav class="menu">
+    <ul class="menuList">
+        <a class="menuItems" href="">Sale</a>
+        <a class="menuItems" href="">New</a>
+        <a class="menuItems" href="">Clothes</a>
+        <article>
+            <div class="pCont">
+                <a class="menuItems" href="">Shoes</a>
+            </div>
+            <ul>
+                <li><a href="/store?var=general&val=general">All Shoes</a></li>
+                <li><a href="/store?var=category&val=boots">Boots</a></li>
+                <li><a href="/store?var=category&val=tennis">Sneakers</a></li>
+                <li><a href="/store?var=category&val=heels">Heels</a></li>
+            </ul>
+        </article>
+        <a class="menuItems" href="">Accessories</a>
+    </ul>
+</nav>
 
-Handlebars.registerPartial('foot', `<footer><div class="footerGrupo"><div class="nosotros"><ul class="footerList"><a class="titulo"> <strong>NOSOTROS</strong></a><a class="textoInfo">Nuestra Compañía</a><a class="textoInfo">Ética Empresarial</a><a class="textoInfo">Tiendas y Contácto</a><a class="textoInfo">Compra con Confianza.</a></ul></div><div class="beneficios"><ul class="footerList"><a class="titulo"> <strong>BENEFICIOS</strong></a><a class="textoInfo">Noticias</a><a class="textoInfo">Eventos</a><a class="textoInfo">Obtén Premios</a><a class="textoInfo">Plan de Fidelización</a></ul></div><div class="Contactanos"><ul class="footerList"><a class="titulo"> <strong>CONTÁCTANOS </strong></a><a class="textoInfo">Calle 44a #68a-08 Cali </a><a class="textoInfo">info@accesoriosemilia.com</a><a class="textoInfo">+57 300 342 3657</a></ul></div></div></footer>`);
+<div class="emty"></div>
+<div></div>
+</header>`);
+
+Handlebars.registerPartial('footer', `<footer>
+<div class="footerGroup">
+        <div class="account">
+                <ul class="footerList">
+                    <a class="listH"> <strong>MY ACCOUNT</strong></a>
+                    <a class="listI">My Crushes</a>
+                    <a class="listI">Order History</a>
+                    <a class="listI">Recycling Options</a>
+                </ul>
+            </div>
+            <div class="care">
+                <ul class="footerList">
+                    <a class="listH"> <strong>CUSTOMER CARE</strong></a>
+                    <a class="listI">Help</a>
+                    <a class="listI">Returns</a>
+                    <a class="listI">Delivery info</a>
+                    <a class="listI">Contact Us</a>
+                </ul>
+            </div>
+            <div class="more">
+                    <ul class="footerList">
+                        <a class="listH"> <strong>ABOUT US  MORE</strong></a>
+                        <a class="listI">About Us</a>
+                        <a class="listI">Student Discount</a>
+                        <a class="listI">Gift Vouchers</a>
+                        <a class="listI">Become an Affiliate</a>
+                    </ul>
+                </div>
+</div>
+</footer>`);
 app.listen(5500);

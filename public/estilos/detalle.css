@@ -1,0 +1,37 @@
+.producto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.producto .imagenes {
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.producto .imagenes .imgsVerticales {
+  width: 20%;
+}
+
+.producto .imagenes .imgContGen {
+  width: 80%;
+}
+
+.producto .descripcion {
+  width: 40%;
+}
+
+img {
+  width: 100%;
+}
+/*# sourceMappingURL=detalle.css.map */
