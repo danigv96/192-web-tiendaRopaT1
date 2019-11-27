@@ -113,6 +113,10 @@ app.get('/informacion', function (request, response) {
     response.render('informacion');
 });
 
+app.get('/congrats', function (request, response) {
+    response.render('congrats');
+});
+
 app.post('/api/AgregarAlCarrito', function (request, response) {
     const coleccion = db.collection('productos');
     const coleccion2 = db.collection('Carrito');
@@ -143,14 +147,8 @@ app.post('/api/AgregarAlCarrito', function (request, response) {
         });
 });
 
-app.post('/api/vaciarCarrito', function (request, response) {
-    const coleccion = db.collection('carrito');
-    coleccion.remove({});
-    response.send("borrado");
-});
-
 app.post('/api/nuevaSolicitud', function (request, response) {
-    const coleccion = db.collection('peticiones');
+    const coleccion = db.collection('Peticiones');
     coleccion.insert({
         nombre: request.body.nombre,
         apellido: request.body.nombre,

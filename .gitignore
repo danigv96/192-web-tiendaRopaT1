@@ -1,5 +1,2 @@
 node_modules
-
-views/aretes.handlebars
-views/informacion.handlebars
 *.css.map

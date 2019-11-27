@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DTV</title>
+    <link rel="stylesheet" href="./estilos/styleShoes.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./estilos/informacion.css">
+</head>
+
+<body>
+    {{> header}}
+
+    <div class="shoes_title">
+        <h1 class="title">Checkout</h1>
+        <div class="titleStyle">
+            <div class="titleStyle1"></div>
+        </div>
+    </div>
+
+    <div class="form">
+        <p>Shipment information</p>
+        <div class="juntos">
+            <input type="text" name="nombre" id="nombre" value="" placeholder="Name">
+            <input type="text" name="apellido" id="apellido" value="" placeholder="Last name">
+        </div>
+
+        <input type="number" name="cedula" id="cedula" value="" placeholder="ID">
+        <input type="text" name="direccion" id="direccion" value="" placeholder="Direction">
+        <input type="text" name="casa" id="casa" value="" placeholder="Home (optional)">
+
+        <p>Card Information</p>
+        <input type="number" name="cuenta" id="cuenta" value="" placeholder="Card number">
+
+        <div class="juntos">
+            <div class="cont">
+                <p>Due date</p>
+                <input type="date" name="fecha" id="fecha" value="">
+            </div>
+            <div class="cont">
+                <p>Security code</p>
+                <input type="number" name="codigo" id="codigo" value="" placeholder="CVV">
+            </div>
+        </div>
+    </div>
+
+        <div class="pagar">Buyout</div>
+    {{> footer}}
+</body>
+<script>
+    document.querySelector('.pagar').addEventListener('click', function () {
+        var nombre = document.getElementById('nombre').value;
+        var apellido = document.getElementById('apellido').value;
+        var cedula = document.getElementById('cedula').value;
+        var direccion = document.getElementById('direccion').value;
+        var casa = document.getElementById('casa').value;
+        var cuenta = document.getElementById('cuenta').value;
+        var fecha = document.getElementById('fecha').value;
+        var codigo = document.getElementById('codigo').value;
+
+        if (nombre == '' || apellido == '' || cedula == '' || direccion == '' || cuenta == '' || fecha == '' || codigo == '') {
+            alert("Por favor llene todos los campos");
+            return;
+        } else {
+            fetch(`/api/NuevaSolicitud`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `nombre=${nombre}&apellido=${apellido}&cedula=${cedula}&direccion=${direccion}&cuenta=${cuenta}&fecha=${fecha}&codigo=${codigo}`,
+            }).then(function (respuesta) {
+                return respuesta.text();
+            }).catch(function (error) {
+                console.error(error);
+            }).then(function (mensaje) {
+                console.log(mensaje);
+            });
+            
+            window.location.href = "/congrats";
+        }
+    });
+</script>
+
+</html>

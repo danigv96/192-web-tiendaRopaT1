@@ -1,0 +1,52 @@
+.form {
+    color: gray;
+    width: 60%;
+
+    p {
+        margin: 30px 0;
+    }
+
+    input {
+        width: 98.4%;
+        border: rgba(grey, .3) 1px solid;
+        border-radius: 20px;
+        height: 30px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    .juntos {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+
+        .cont {
+            width: 100%;
+        }
+
+        input {
+            width: 47%;
+        }
+    }
+}
+
+.pagar {
+    margin: 50px 0;
+    background-color: gray;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 80%;
+    font-weight: 400;
+    width: 300px;
+    height: 30px;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+        background: white;
+        color: black;
+    }
+}
