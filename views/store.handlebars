@@ -8,12 +8,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="./estilos/styleShoes.css">
     <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./estilos/nav.css">
 </head>
 
 <body>
     {{> header}}
 
     <div class="shoes_title">
+        <p class="iconodebag">{{amoung}}</p>
         <h1 class="title">Shoes</h1>
         <div class="titleStyle">
             <div class="titleStyle1"></div>
@@ -25,10 +27,19 @@
                 <p>Style</a>
             </div>
             <ul>
-                <li><a href="/store?var=general&val=general">All Shoes</a></li>
-                <li><a href="/store?var=category&val=boots">Boots</a></li>
-                <li><a href="/store?var=category&val=tennis">Sneakers</a></li>
-                <li><a href="/store?var=category&val=heels">Heels</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=general&val=general">All Shoes</a>
+                </li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=category&val=boots">Boots</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=category&val=tennis">Sneakers</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=category&val=heels">Heels</a></li>
             </ul>
         </article>
         <article>
@@ -36,9 +47,15 @@
                 <p>Size</a>
             </div>
             <ul>
-                <li><a href="/store?var=size&val=6">6</a></li>
-                <li><a href="/store?var=size&val=7">7</a></li>
-                <li><a href="/store?var=size&val=8">8</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=size&val=6">6</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=size&val=7">7</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=size&val=8">8</a></li>
             </ul>
         </article>
         <article>
@@ -46,9 +63,15 @@
                 <p>Colour</a>
             </div>
             <ul>
-                <li><a href="/store?var=colour&val=black">black</a></li>
-                <li><a href="/store?var=colour&val=grey">grey</a></li>
-                <li><a href="/store?var=colour&val=white">white</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=colour&val=black">black</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=colour&val=grey">grey</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=colour&val=white">white</a></li>
             </ul>
         </article>
         <article>
@@ -56,15 +79,19 @@
                 <p>Sort by</a>
             </div>
             <ul>
-                <li><a href="/store?var=ordenar&val=des">price (Hight to Low)</a></li>
-                <li><a href="/store?var=ordenar&val=asc">price (Low to Hight)</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=ordenar&val=des">price (Hight to Low)</a></li>
+                <li>
+                    <input type="checkbox">
+                    <a href="/store?var=ordenar&val=asc">price (Low to Hight)</a></li>
             </ul>
         </article>
     </nav>
     <div class="products" id="products">
         {{#each productos}}
         <div class="product">
-            <a href='/detalle?producto={{name}}'>bag</a>
+            <a href='/detalle?producto={{name}}'>{{val}}</a>
             <div>
                 <img class="product_img" src="./{{imagen.[0]}}" alt="">
             </div>

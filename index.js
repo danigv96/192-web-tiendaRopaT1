@@ -41,32 +41,54 @@ app.get('/', function (request, response) {
 });
 
 app.get('/store', function (request, response) {
-    const coleccion = db.collection('productos');
     var obj = {},
         va = request.query.var;
     if (va !== 'general' && va !== 'ordenar') obj[va] = {
         '$eq': request.query.val
     };
 
-    coleccion.find(obj).toArray(function (err, docs) {
-        if (err) {
-            console.log(err);
-            response.send(err);
-            return;
-        }
-        if (va === 'ordenar') {
-            if (request.query.val === 'des') docs.sort((a, b) => {
-                return (b.price - a.price)
+    db.collection('Carrito').find({}).toArray(function (errr, docss) {
+        if (errr) {console.log(errr);response.send(errr); return;}
+
+        let string = '';
+
+        for (let j = 0; j < docss.length; j++) {
+            const e = docss[j];
+            string+=e.name+'';
+        }        
+
+        db.collection('productos').find(obj).toArray(function (err, docs) {
+                if (err) {
+                    console.log(err);
+                    response.send(err);
+                    return;
+                }
+                if (va === 'ordenar') {
+                    if (request.query.val === 'des') docs.sort((a, b) => {
+                        return (b.price - a.price)
+                    });
+                    if (request.query.val === 'asc') docs.sort((a, b) => {
+                        return (a.price - b.price)
+                    });
+                }
+
+               for (let i = 0; i < docs.length; i++) {
+                const elem = docs[i];
+                if (string.includes(elem.name)) {
+                    docs[i].val = 'Comprado';
+                }else {
+                    docs[i].val = 'Comprar';
+                }
+            }
+
+                var contexto = {
+                    productos: docs,
+                    amoung: docss.length
+                };
+                response.render('store', contexto);
             });
-            if (request.query.val === 'asc') docs.sort((a, b) => {
-                return (a.price - b.price)
-            });
-        }
-        var contexto = {
-            productos: docs
-        };
-        response.render('store', contexto);
     });
+
 });
 
 app.get('/detalle', function (request, response) {

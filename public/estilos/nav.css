@@ -1,0 +1,160 @@
+.menuList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 0;
+}
+
+.menuList * {
+  margin: 0;
+  padding: 0;
+}
+
+.menuList ul {
+  list-style: none;
+  position: absolute;
+  display: none;
+  width: 250px;
+  border: grey 2px solid;
+  border-top: none;
+  background-color: white;
+}
+
+.menuList ul li {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menuList ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.menuList ul li a {
+  width: 254px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: gray;
+}
+
+.menuList article:hover > ul {
+  display: block;
+}
+
+.menuList .pCont {
+  width: 250px;
+  height: 100px;
+  border: gray 2px solid;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.menuList .pCont p {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+
+.filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px 0;
+}
+
+.filters * {
+  margin: 0;
+  padding: 0;
+}
+
+.filters ul {
+  list-style: none;
+  position: absolute;
+  display: none;
+  width: 150px;
+  border: grey 2px solid;
+  border-top: none;
+  background-color: white;
+}
+
+.filters ul li {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filters ul li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.filters ul li a {
+  width: 150px;
+  margin-left: 20px;
+  text-decoration: none;
+  color: gray;
+}
+
+.filters article:hover > ul {
+  display: block;
+}
+
+.filters .pCont {
+  width: 150px;
+  height: 100px;
+  border: gray 2px solid;
+  color: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.filters .pCont p {
+  font-weight: 800;
+  font-size: 1.5em;
+}
+/*# sourceMappingURL=nav.css.map */
