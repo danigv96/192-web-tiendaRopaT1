@@ -54,9 +54,13 @@ app.get('/store', function (request, response) {
             response.send(err);
             return;
         }
-        if (va === 'ordenar'){ 
-            if(request.query.val === 'des')docs.sort((a, b) => {return (b.price - a.price)});
-            if(request.query.val === 'asc')docs.sort((a, b) => {return (a.price - b.price)});
+        if (va === 'ordenar') {
+            if (request.query.val === 'des') docs.sort((a, b) => {
+                return (b.price - a.price)
+            });
+            if (request.query.val === 'asc') docs.sort((a, b) => {
+                return (a.price - b.price)
+            });
         }
         var contexto = {
             productos: docs
@@ -87,7 +91,7 @@ app.get('/detalle', function (request, response) {
 });
 
 app.get('/checkout', function (request, response) {
-    const coleccion = db.collection('carrito');
+    const coleccion = db.collection('Carrito');
     coleccion.find({}).toArray(function (err, docs) {
         if (err) {
             console.log(err);
@@ -96,7 +100,7 @@ app.get('/checkout', function (request, response) {
         }
         var total = 0;
         docs.map((elem) => {
-            total += elem.precio;
+            total += elem.price;
         });
         response.render('checkout', {
             productos: docs,
@@ -111,12 +115,11 @@ app.get('/informacion', function (request, response) {
 
 app.post('/api/AgregarAlCarrito', function (request, response) {
     const coleccion = db.collection('productos');
-    const coleccion2 = db.collection('carrito');
+    const coleccion2 = db.collection('Carrito');
     let titulo = request.body.nombre;
-    let cant = request.body.cantidad;
 
     coleccion.find({
-            nombre: {
+            name: {
                 '$eq': titulo
             }
         })
@@ -126,18 +129,17 @@ app.post('/api/AgregarAlCarrito', function (request, response) {
                 response.send(err);
                 return;
             }
-            for (let i = 0; i < parseInt(cant); i++) {
                 console.log("insertò" + doc);
-                coleccion2.insert({
-                    categoria: doc[0].categoria,
-                    estilo: doc[0].estilo,
-                    descripción: doc[0].descripción,
-                    nombre: doc[0].nombre,
-                    precio: doc[0].precio,
-                    color: doc[0].color,
-                    imagenes: doc[0].imagenes
+                coleccion2.insert({ 
+                    name: doc[0].name,
+                    price: doc[0].price,
+                    description: doc[0].description,
+                    size: doc[0].size,
+                    imagen: doc[0].imagen,
+                    category: doc[0].category,
+                    colour: doc[0].colour
                 });
-            }
+            
         });
 });
 
@@ -226,7 +228,5 @@ Handlebars.registerPartial('footer', `<footer>
                         <a class="listI">Gift Vouchers</a>
                         <a class="listI">Become an Affiliate</a>
                     </ul>
-                </div>
-</div>
-</footer>`);
+        </div></div></footer>`);
 app.listen(5500);

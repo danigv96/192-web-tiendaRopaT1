@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DTV</title>
+
+    <link rel="stylesheet" href="./estilos/styleShoes.css">
+    <link rel="stylesheet" href="./estilos/main.css">
+    <link rel="stylesheet" href="./estilos/checkout.css">
+</head>
+
+<body>
+    {{> header}}
+
+    <div class="shoes_title">
+        <h1 class="title">Shoping Bag</h1>
+        <div class="titleStyle">
+            <div class="titleStyle1"></div>
+        </div>
+    </div>
+
+    <div class="bag">
+        {{#each productos}}
+        <div class="prod">
+            <img src="./{{imagen.[0]}}" alt="">
+
+            <div class="des">
+                <h2>{{name}}</h2>
+                <h6>Colour: {{colour}}</h6>
+                <h6>Size: {{size}}</h6>
+            </div>
+
+            <div class="cant">
+                <p>Num Products</p>
+                <input type="number" value="1">
+            </div>
+
+            <div class="Price">
+                <p>Price</p>
+                <p>$ {{price}}</p>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+
+    <hr/>
+
+    <p>Total: $ {{total}}</p>
+
+    <a class="btnCheck" href="/informacion">CheckOut</div>
+
+{{> footer}}
+</body>
+</html>

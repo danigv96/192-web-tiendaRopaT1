@@ -1,6 +1,5 @@
 node_modules
 
 views/aretes.handlebars
-views/checkout.handlebars
 views/informacion.handlebars
 *.css.map
